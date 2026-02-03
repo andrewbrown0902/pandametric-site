@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>PandaMetric — Contractor Websites + Systems That Book Jobs</title>
+    <meta
+      name="description"
+      content="PandaMetric builds fast, high-converting, SEO-ready websites for contractors — with optional follow-up and review systems to help you get more jobs without more chaos."
+    />
+    <!-- Optional: update to your live domain -->
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PandaMetric — Contractor Websites + Systems That Book Jobs" />
+    <meta
+      property="og:description"
+      content="Professional contractor websites built to convert — with optional missed-call text back, lead follow-up, and review systems."
+    />
+    <meta property="og:type" content="website" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#188bf7",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+              ink: "#111518",
+              slateText: "#5f768c",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              "2xl": "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+      }
+      .tech-pattern {
+        background-image: radial-gradient(#188bf7 0.55px, transparent 0.55px);
+        background-size: 26px 26px;
+      }
+      .focus-ring:focus {
+        outline: 2px solid rgba(24, 139, 247, 0.55);
+        outline-offset: 3px;
+      }
+    </style>
+
+    <!-- Organization schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PandaMetric",
+        "url": "https://example.com/",
+        "logo": "https://example.com/logo.png",
+        "sameAs": []
+      }
+    </script>
+  </head>
+
+  <body class="bg-background-light dark:bg-background-dark font-display text-ink dark:text-white">
+    <!-- Top Navigation Bar -->
+    <header
+      class="sticky top-0 z-50 w-full border-b border-[#f0f2f5] dark:border-white/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md"
+    >
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+        <a href="#top" class="flex items-center gap-3 focus-ring rounded-lg">
+  <img
+    src="/assets/pandametric.logo.png"
+    alt="PandaMetric logo"
+    class="h-16 w-auto"
+  />
+</a>
+
+
+        <div class="hidden md:flex items-center gap-8">
+          <nav class="flex items-center gap-6">
+            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#systems"
+              >What You Get</a
+            >
+            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#trades"
+              >Who We Help</a
+            >
+            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#pricing"
+              >Pricing</a
+            >
+            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#process"
+              >Process</a
+            >
+            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <a
+            href="#contact"
+            class="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:brightness-110 transition-all focus-ring"
+          >
+            Free Walkthrough
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 1: Hero (KEEP EXACTLY THE SAME AS CURRENT)     -->
+    <!-- ===================================================== -->
+    <section id="top" class="bg-background-dark text-white tech-pattern relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
+
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-24 pb-28 relative z-10">
+        <div class="max-w-[880px] flex flex-col gap-8">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest"
+          >
+            <span class="material-symbols-outlined text-[14px]">bolt</span>
+            Built for contractors & home services
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-black leading-[1.06] tracking-[-0.045em]">
+            Your website shouldn’t just look good.
+            <span class="text-primary underline decoration-white/15">It should book jobs.</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-white/70 max-w-[680px] leading-relaxed">
+            PandaMetric builds fast, conversion-focused contractor websites — plus a backend system that texts missed callers,
+            follows up with leads, and helps you collect more 5-star reviews automatically.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 mt-2">
+            <a
+              href="#contact"
+              class="w-full sm:w-auto bg-primary text-white text-lg font-bold px-8 py-4 rounded-lg hover:scale-[1.02] transition-transform focus-ring text-center"
+            >
+              Get a Free Walkthrough of the Site &amp; System
+            </a>
+            <div class="text-sm font-medium text-white/50 text-center sm:text-left">
+              No pressure. We’ll show you what the system would look like for <span class="text-white/80">your</span> business.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 border-t border-white/10 pt-10">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">check_circle</span>
+              <div>
+                <p class="font-bold">Instant Lead Response</p>
+                <p class="text-sm text-white/50">Missed-call text back + fast follow-up.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">check_circle</span>
+              <div>
+                <p class="font-bold">Built to Convert</p>
+                <p class="text-sm text-white/50">Clear CTAs, trust blocks, and flow.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">check_circle</span>
+              <div>
+                <p class="font-bold">Done-for-You Setup</p>
+                <p class="text-sm text-white/50">You focus on jobs. We run the system.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 2: Website-first message (NEW)                 -->
+    <!-- ===================================================== -->
+    <section
+      id="website-first"
+      class="py-24 bg-white dark:bg-background-dark border-b border-[#f0f2f5] dark:border-white/5"
+    >
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest"
+            >
+              <span class="material-symbols-outlined text-[16px]">language</span>
+              Website design & marketing systems
+            </div>
+
+            <h2 class="text-4xl md:text-5xl font-black tracking-tight leading-[1.1]">
+              If you don’t have a real website in 2026,
+              <span class="text-primary">customers can’t find you.</span>
+            </h2>
+
+            <p class="text-lg text-slateText leading-relaxed">
+              Most contractors rely on referrals — and that’s fine… until it slows down. When people search you (or your service)
+              and they don’t find a professional site, they move on to the next company.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div
+                class="flex items-start gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary mt-0.5">search</span>
+                <div>
+                  <p class="font-bold">Be findable</p>
+                  <p class="text-sm text-slateText dark:text-white/60">Show up when customers search.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary mt-0.5">verified</span>
+                <div>
+                  <p class="font-bold">Look legit</p>
+                  <p class="text-sm text-slateText dark:text-white/60">Build trust before you ever talk.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary mt-0.5">call</span>
+                <div>
+                  <p class="font-bold">Get more calls</p>
+                  <p class="text-sm text-slateText dark:text-white/60">Make it obvious how to contact you.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary mt-0.5">handshake</span>
+                <div>
+                  <p class="font-bold">Win more bids</p>
+                  <p class="text-sm text-slateText dark:text-white/60">Present like a top-tier company.</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#pricing"
+              class="inline-flex items-center gap-2 bg-ink dark:bg-white dark:text-ink text-white font-bold px-6 py-3 rounded-lg group focus-ring"
+            >
+              See plans
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <div
+            class="bg-background-light dark:bg-white/5 border border-[#dbe1e6] dark:border-white/10 rounded-2xl p-8 relative overflow-hidden"
+          >
+            <div class="absolute -top-10 -right-10 w-52 h-52 rounded-full bg-primary/15 blur-2xl"></div>
+
+            <div class="space-y-4 relative">
+              <div class="bg-white dark:bg-background-dark p-5 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+                <div class="flex items-center gap-3">
+                  <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">person_search</span>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs text-slateText font-bold uppercase tracking-wider">What customers do</p>
+                    <p class="font-bold">They Google your service… then compare websites.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white dark:bg-background-dark p-5 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+                <div class="flex items-center gap-3">
+                  <div class="size-10 rounded-full bg-primary flex items-center justify-center text-white">
+                    <span class="material-symbols-outlined">public</span>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs text-primary font-bold uppercase tracking-wider">What we build</p>
+                    <p class="font-bold">A clean website that answers their questions fast.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white dark:bg-background-dark p-5 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+                <div class="flex items-center gap-3">
+                  <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">call</span>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs text-slateText font-bold uppercase tracking-wider">Outcome</p>
+                    <p class="font-bold">More calls, more quote requests, more booked jobs.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-4 rounded-2xl border-2 border-dashed border-slate-300 dark:border-white/20 text-center text-slateText dark:text-white/60 italic"
+              >
+                Your website is your “online storefront.” Make it professional.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 3: Problem (REVISED: visibility + follow-up)   -->
+    <!-- ===================================================== -->
+    <section class="py-24 bg-background-light dark:bg-background-dark/40" id="problem">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="flex-1 space-y-6">
+            <h2 class="text-4xl font-black tracking-tight leading-tight">
+              The real problem isn’t “marketing.”
+              <span class="text-primary">It’s visibility + follow-up.</span>
+            </h2>
+
+            <p class="text-lg text-slateText leading-relaxed">
+              If you’re relying on referrals and word-of-mouth only, you’re basically hoping business falls out of the sky.
+              A professional website fixes the visibility problem. A simple follow-up system fixes the “missed lead” problem.
+              You can choose either — or both.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div
+                class="flex items-center gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-white/80 dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary">visibility_off</span>
+                <p class="font-semibold">No website = customers can’t find you.</p>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-white/80 dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary">emoji_people</span>
+                <p class="font-semibold">No trust = customers choose someone else.</p>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-white/80 dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary">call_missed</span>
+                <p class="font-semibold">Missed calls = missed jobs.</p>
+              </div>
+              <div
+                class="flex items-center gap-3 p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-white/80 dark:bg-white/5"
+              >
+                <span class="material-symbols-outlined text-primary">star</span>
+                <p class="font-semibold">No review system = slow reputation growth.</p>
+              </div>
+            </div>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 bg-ink dark:bg-white dark:text-ink text-white font-bold px-6 py-3 rounded-lg group focus-ring"
+            >
+              Get the walkthrough
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Visual -->
+          <div
+            class="flex-1 w-full bg-white dark:bg-white/5 rounded-2xl p-8 border border-[#dbe1e6] dark:border-white/10 relative"
+          >
+            <div class="space-y-4">
+              <div class="bg-background-light dark:bg-background-dark p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+                <div class="flex items-center gap-4">
+                  <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">web</span>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs text-slateText font-bold uppercase tracking-wider">Step 1</p>
+                    <p class="font-bold">A professional site that converts.</p>
+                    <p class="text-sm text-slateText dark:text-white/60">Clear services, proof, and CTAs.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-background-light dark:bg-background-dark p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+                <div class="flex items-center gap-4">
+                  <div class="size-10 rounded-full bg-primary flex items-center justify-center text-white">
+                    <span class="material-symbols-outlined">sms</span>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs text-primary font-bold uppercase tracking-wider">Step 2</p>
+                    <p class="font-bold">Automatic Capture &amp; Follow-Up</p>
+                    <p class="text-sm text-slateText dark:text-white/60">So leads don’t disappear.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-background-light dark:bg-background-dark p-4 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+                <div class="flex items-center gap-4">
+                  <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">reviews</span>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs text-slateText font-bold uppercase tracking-wider">Step 3</p>
+                    <p class="font-bold">Rank at the Top of Google</p>
+                    <p class="text-sm text-slateText dark:text-white/60">Generate leads and build reputation consistently.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-4 rounded-2xl border-2 border-dashed border-slate-300 dark:border-white/20 text-center text-slateText dark:text-white/60 italic"
+              >
+                Website first. System second. Growth third.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 4: Reframe (REVISED)                           -->
+    <!-- ===================================================== -->
+    <section class="py-24 bg-primary text-white">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10 text-center">
+        <h2 class="text-4xl md:text-6xl font-black leading-tight tracking-tight max-w-[1050px] mx-auto">
+          We build contractor websites that look legit.
+          <br class="hidden md:block" />
+          Then we add the systems that <span class="text-background-dark">help you book more jobs.</span>
+        </h2>
+        <p class="mt-8 text-xl text-white/85 max-w-3xl mx-auto">
+          No fluff. No “branding exercises.” Just a clean website that converts — along with automations that keep leads moving
+          when you’re busy on the job.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 5: What you get (REVISED: feature clarity)     -->
+    <!-- ===================================================== -->
+    <section class="py-24" id="systems">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-black">What you get</h2>
+          <p class="text-slateText mt-4">
+            Simple, contractor-friendly deliverables — built to be obvious, fast, and effective.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Website -->
+          <div
+            class="bg-white dark:bg-white/5 rounded-2xl p-10 border border-[#dbe1e6] dark:border-white/10 shadow-xl shadow-slate-200/50 dark:shadow-none"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[32px]">language</span>
+              </div>
+              <h3 class="text-2xl font-bold">The website (core)</h3>
+            </div>
+            <p class="text-slateText mb-8 italic">What customers see — and judge you by</p>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check</span>
+                <span><strong>Custom contractor site</strong> (conversion-focused pages, not fluff).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check</span>
+                <span><strong>Click-to-call + quote forms</strong> that are simple on mobile.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check</span>
+                <span><strong>Trust builders</strong> (reviews, photos, badges, “how it works,” FAQs).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check</span>
+                <span><strong>Fast + mobile-first</strong> (built to load quickly and read cleanly).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check</span>
+                <span><strong>SEO-ready foundation</strong> (clean structure, titles, schema support).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check</span>
+                <span><strong>Done-for-you hosting + edits</strong> so it stays updated.</span>
+              </li>
+            </ul>
+
+            <div class="mt-8 p-5 rounded-2xl bg-background-light dark:bg-white/5 border border-[#dbe1e6] dark:border-white/10">
+              <p class="font-bold">Bottom line:</p>
+              <p class="text-slateText dark:text-white/70">
+                Customers can find you, trust you, and contact you without friction.
+              </p>
+            </div>
+          </div>
+
+          <!-- System -->
+          <div class="bg-background-dark text-white rounded-2xl p-10 border border-white/10 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-44 h-44 bg-primary/20 blur-3xl rounded-full -mr-20 -mt-20"></div>
+
+            <div class="flex items-center gap-4 mb-6">
+              <div class="size-12 rounded-xl bg-primary flex items-center justify-center text-white">
+                <span class="material-symbols-outlined text-[32px]">settings</span>
+              </div>
+              <h3 class="text-2xl font-bold">The system</h3>
+            </div>
+
+            <p class="text-white/60 mb-8 italic">What keeps leads moving when you’re on the job</p>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">bolt</span>
+                <span><strong>Missed-call text back</strong> (instant reply so leads don’t bounce).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">bolt</span>
+                <span><strong>Lead follow-up</strong> via text/email (until they respond).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">bolt</span>
+                <span><strong>Review requests</strong> (simple flow to grow 5-star volume).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">bolt</span>
+                <span><strong>Unified inbox</strong> for calls/texts/forms (less chaos).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">bolt</span>
+                <span><strong>Optional booking</strong> + reminders (if you want it).</span>
+              </li>
+            </ul>
+
+            <div class="mt-8 p-5 rounded-2xl bg-white/5 border border-white/10">
+              <p class="font-bold">Bottom line:</p>
+              <p class="text-white/70">
+                You don’t need to be “tech-savvy.” You just need a system that responds fast and stays consistent.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-lg hover:brightness-110 transition-all focus-ring"
+          >
+            Show me what this looks like for my business
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 6: Why this works (REVISED: contractor plain)  -->
+    <!-- ===================================================== -->
+    <section class="py-24 bg-background-light dark:bg-background-dark/50">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-black">Why this works</h2>
+          <p class="text-slateText mt-4">Because it fixes the basics contractors actually need.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col gap-4 p-8 bg-white dark:bg-white/5 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+            <span class="material-symbols-outlined text-primary text-4xl">workspace_premium</span>
+            <h4 class="text-xl font-bold">You look legit</h4>
+            <p class="text-slateText dark:text-white/60">
+              A clean, professional website helps customers trust you before they ever call.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4 p-8 bg-white dark:bg-white/5 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+            <span class="material-symbols-outlined text-primary text-4xl">search</span>
+            <h4 class="text-xl font-bold">You get found</h4>
+            <p class="text-slateText dark:text-white/60">
+              SEO-ready structure gives you a foundation to build rankings over time (especially with Tier 3).
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4 p-8 bg-white dark:bg-white/5 rounded-2xl border border-[#dbe1e6] dark:border-white/10">
+            <span class="material-symbols-outlined text-primary text-4xl">schedule</span>
+            <h4 class="text-xl font-bold">You miss fewer leads</h4>
+            <p class="text-slateText dark:text-white/60">
+              Optional automations respond when you’re busy — so you don’t lose the job to “first response.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 7: Who we help (NEW: trades strip)             -->
+    <!-- ===================================================== -->
+    <section class="py-24 bg-white dark:bg-background-dark" id="trades">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-black">Built for contractors & home service businesses</h2>
+          <p class="text-slateText mt-4 max-w-3xl mx-auto">
+            If customers search for your service online, this works. We keep it simple and built around getting calls and quote requests.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card -->
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">General Contractors</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">Remodeling</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">Roofing</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">Landscaping</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">Cleaning</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">HVAC</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">Plumbing</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-[#dbe1e6] dark:border-white/10 bg-background-light dark:bg-white/5">
+            <p class="font-black text-lg">Electrical</p>
+            <p class="text-slateText dark:text-white/60 mt-2 text-sm">Residential + commercial</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-lg hover:brightness-110 transition-all focus-ring"
+          >
+            Ask if we work with your trade
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 8: Pricing (REVISED: more screenshot-like)     -->
+    <!-- ===================================================== -->
+    <section class="py-24" id="pricing">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-black">Simple pricing</h2>
+          <p class="text-slateText mt-4">Start with the website. Add the system. Upgrade to growth when you’re ready.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          <!-- Tier 1 -->
+          <div class="bg-white dark:bg-white/5 p-8 rounded-2xl border-2 border-primary/40 flex flex-col">
+            <p class="text-xs font-black uppercase tracking-[0.18em] text-primary">Contractor Essentials</p>
+            <h4 class="text-2xl font-black mt-2">Website Foundation</h4>
+            <p class="text-sm text-slateText mt-3">Best if you need a legit website that looks professional and converts.</p>
+
+            <div class="mt-7">
+              <div class="text-5xl font-black leading-none">
+                $97<span class="text-lg font-extrabold text-slateText">/mo</span>
+              </div>
+              <div class="text-sm text-slateText mt-2">
+                <span class="font-semibold">$500</span> setup (covers build + launch)
+              </div>
+            </div>
+
+            <a
+              href="#contact"
+              class="mt-6 w-full bg-primary text-white font-bold py-3 rounded-lg hover:brightness-110 transition-all focus-ring text-center"
+            >
+              Start with a website
+            </a>
+
+            <div class="mt-8 border-t border-[#dbe1e6] dark:border-white/10 pt-6">
+              <p class="font-bold mb-4">Includes:</p>
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Mobile-First, High-Converting 5–7 page website (Home + Services + Portfolio + About + Contact + Legal)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Domain, hosting, security, uptime monitoring all included</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>SEO-ready foundation (schema support, clean titles, structure)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Ongoing maintenance + edits</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="bg-primary text-white p-8 rounded-2xl border-4 border-primary relative shadow-2xl flex flex-col lg:scale-[1.04] z-10">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-ink text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full"
+            >
+              Most popular
+            </div>
+
+            <p class="text-xs font-black uppercase tracking-[0.18em] text-white/90">Contractor Professional</p>
+            <h4 class="text-2xl font-black mt-2">Website + System</h4>
+            <p class="text-sm text-white/85 mt-3">
+              Best if you want the website <span class="font-bold underline decoration-white/30">and</span> the follow-up system that stops missed leads.
+            </p>
+
+            <div class="mt-7">
+              <div class="text-5xl font-black leading-none">
+                $297<span class="text-lg font-extrabold text-white/85">/mo</span>
+              </div>
+              <div class="text-sm text-white/80 mt-2">
+                <span class="font-semibold">$0</span> setup
+              </div>
+            </div>
+
+            <a
+              href="#contact"
+              class="mt-6 w-full bg-white text-ink font-black py-3 rounded-lg hover:brightness-95 transition-all focus-ring text-center"
+            >
+              Get the system
+            </a>
+
+            <div class="mt-8 border-t border-white/25 pt-6">
+              <p class="font-bold mb-4">Includes everything in Essentials, plus:</p>
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
+                  <span>Missed-call text back</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
+                  <span>Automated lead follow-ups (SMS/email)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
+                  <span>Review request + filtering system</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
+                  <span>Unified inbox + mobile app access</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
+                  <span>Optional booking & payments systems</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="bg-white dark:bg-white/5 p-8 rounded-2xl border-2 border-ink/15 dark:border-white/15 flex flex-col">
+            <p class="text-xs font-black uppercase tracking-[0.18em] text-primary">Contractor Premium</p>
+            <h4 class="text-2xl font-black mt-2">Growth System</h4>
+            <p class="text-sm text-slateText mt-3">Best if you want visibility and compounding growth (GBP + Local SEO).</p>
+
+            <div class="mt-7">
+              <div class="text-5xl font-black leading-none">
+                $597<span class="text-lg font-extrabold text-slateText">/mo</span>
+              </div>
+              <div class="text-sm text-slateText mt-2">
+                <span class="font-semibold">$0</span> setup
+              </div>
+            </div>
+
+            <a
+              href="#contact"
+              class="mt-6 w-full border border-ink dark:border-white text-ink dark:text-white font-bold py-3 rounded-lg hover:bg-ink dark:hover:bg-white dark:hover:text-ink hover:text-white transition-colors focus-ring text-center"
+            >
+              Grow rankings
+            </a>
+
+            <div class="mt-8 border-t border-[#dbe1e6] dark:border-white/10 pt-6">
+              <p class="font-bold mb-4">Includes everything in Professional, plus:</p>
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Google Business Profile optimization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Local SEO rollout (service + area pages over time)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Review velocity strategy</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>SMS/email remarketing (reactivation + referrals)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                  <span>Optional LSA support (ad spend separate)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center text-sm text-slateText mt-10">
+          Want only the website? Start with <span class="font-semibold">Essentials</span>. Want the site to actually <span class="font-semibold">book jobs</span>? Choose <span class="font-semibold">Professional</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 9: Process (light revisions)                   -->
+    <!-- ===================================================== -->
+    <section class="py-24 bg-background-light dark:bg-background-dark/30" id="process">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <h2 class="text-3xl md:text-4xl font-black mb-6 text-center">How it works</h2>
+        <p class="text-center text-slateText mb-16">Simple. Predictable. Built to get you live fast.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+          <div class="hidden md:block absolute top-10 left-[20%] right-[20%] h-0.5 bg-[#dbe1e6] dark:bg-white/10 z-0"></div>
+
+          <div class="relative z-10 text-center space-y-4">
+            <div class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark">
+              1
+            </div>
+            <h5 class="text-xl font-bold pt-2">Walkthrough</h5>
+            <p class="text-sm text-slateText">
+              We look at your current online presence and show you the exact website + system you’d need to get more jobs.
+            </p>
+          </div>
+
+          <div class="relative z-10 text-center space-y-4">
+            <div class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark">
+              2
+            </div>
+            <h5 class="text-xl font-bold pt-2">Build &amp; setup</h5>
+            <p class="text-sm text-slateText">
+              We customize your website, launch it, and wire up automations if you choose Professional or Growth.
+            </p>
+          </div>
+
+          <div class="relative z-10 text-center space-y-4">
+            <div class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark">
+              3
+            </div>
+            <h5 class="text-xl font-bold pt-2">Launch</h5>
+            <p class="text-sm text-slateText">
+              Your site goes live (fast). Your system runs in the background (optional). Your visibility compounds (Tier 3).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Founder / Accountability -->
+<section class="py-24 bg-background-light dark:bg-background-dark/40">
+  <div class="max-w-[900px] mx-auto px-6 lg:px-10">
+    <div
+      class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-10 items-center bg-white dark:bg-white/5 border border-[#dbe1e6] dark:border-white/10 rounded-2xl p-10"
+    >
+      <!-- Founder Image -->
+      <div class="flex justify-center md:justify-start">
+        <div class="relative">
+          <img
+            src="/images/andrew-brown.jpg"
+            alt="Andrew Brown, Founder of PandaMetric"
+            class="size-44 rounded-2xl object-cover border border-[#dbe1e6] dark:border-white/10"
+          />
+          <!-- Optional subtle accent -->
+          <div
+            class="absolute -bottom-3 -right-3 size-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg"
+          >
+            <span class="material-symbols-outlined">verified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div>
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight mb-4">
+          Who you’re working with
+        </h2>
+
+        <p class="font-bold mb-2">
+          Andrew Brown — Founder, PandaMetric
+        </p>
+
+        <p class="text-slateText dark:text-white/70 leading-relaxed mb-4">
+          PandaMetric is founder-led and run by a real person here in the US — not a faceless agency or overseas "account manager".
+        </p>
+                
+        <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
+          I’ve worked in digital marketing for over four years, helping local service businesses build a stronger online presence
+          and get more jobs.
+        </p>
+
+        <p class="text-slateText dark:text-white/70 leading-relaxed mb-4">
+          I work directly with contractors to build clean, professional websites and simple systems that actually get used —
+          not bloated software you’ll never touch.
+        </p>
+
+        <p class="text-slateText dark:text-white/70 leading-relaxed">
+          If something needs adjusting, updating, or fixing, you’re not opening a ticket.
+          You have my direct number, and you’re working with me.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===================================================== -->
+    <!-- SECTION 10: FAQ (REVISED: website-first)               -->
+    <!-- ===================================================== -->
+    <section class="py-24" id="faq">
+      <div class="max-w-[900px] mx-auto px-6 lg:px-10">
+        <h2 class="text-3xl md:text-4xl font-black mb-12 text-center">FAQ</h2>
+
+        <div class="space-y-4">
+          <details class="group border border-[#dbe1e6] dark:border-white/10 rounded-2xl bg-white dark:bg-white/5">
+            <summary class="flex justify-between items-center p-6 cursor-pointer font-bold list-none">
+              What if I only want the website?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-slateText dark:text-white/70">
+              Perfect — that’s what <strong>Essentials</strong> is for. You get a clean, fast, professional website with hosting and maintenance.
+              You can upgrade to the system later if you want.
+            </div>
+          </details>
+
+          <details class="group border border-[#dbe1e6] dark:border-white/10 rounded-2xl bg-white dark:bg-white/5">
+            <summary class="flex justify-between items-center p-6 cursor-pointer font-bold list-none">
+              Do I have to learn new software?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-slateText dark:text-white/70">
+              No. The goal is “hands-off.” If you choose Professional or Growth, you’ll have a simple inbox/app option — but we keep it contractor-friendly.
+            </div>
+          </details>
+
+          <details class="group border border-[#dbe1e6] dark:border-white/10 rounded-2xl bg-white dark:bg-white/5">
+            <summary class="flex justify-between items-center p-6 cursor-pointer font-bold list-none">
+              Can you work with my existing website?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-slateText dark:text-white/70">
+              Sometimes. If it’s fast and structured well, we can improve it and “bolt on” the system. If it’s slow/bloated or confusing, we’ll recommend a rebuild.
+            </div>
+          </details>
+
+          <details class="group border border-[#dbe1e6] dark:border-white/10 rounded-2xl bg-white dark:bg-white/5">
+            <summary class="flex justify-between items-center p-6 cursor-pointer font-bold list-none">
+              Do you guarantee rankings?
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-slateText dark:text-white/70">
+              We don’t sell gimmicks. <strong>Growth</strong> includes real local SEO work with clear deliverables that compounds over time. We’ll be transparent about what’s realistic for your area and competition.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECTION 11: Contact / Final CTA (REVISED: website-first) -->
+    <!-- ===================================================== -->
+    <section class="py-24 bg-background-dark text-white text-center tech-pattern relative" id="contact">
+      <div class="absolute inset-0 bg-primary/10"></div>
+
+      <div class="max-w-[1100px] mx-auto px-6 lg:px-10 relative z-10">
+        <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6">Want a real website built for your business?</h2>
+        <p class="text-xl text-white/70 mb-12 max-w-3xl mx-auto">
+          If customers can’t find you online (or your site looks outdated), you’re losing jobs.
+          Let’s build a clean contractor website first — and add the system if you want more booked work with less follow-up chaos.
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <h3 class="text-2xl font-bold mb-4">What you’ll get on the walkthrough</h3>
+            <ul class="space-y-3 text-white/80">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-0.5">check</span>
+                <span>What your website is missing (trust + clarity + conversion)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-0.5">check</span>
+                <span>Exactly what your new site would include (pages + sections)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-0.5">check</span>
+                <span>If/when the follow-up system makes sense for your stage</span>
+              </li>
+            </ul>
+
+            <p class="mt-6 text-sm text-white/55">
+              We keep onboarding efficient so builds stay fast and quality stays high.
+            </p>
+          </div>
+
+          <!-- Simple form (replace with your GHL embed when ready) -->
+          <div class="bg-white rounded-2xl p-8 text-ink border border-white/10">
+            <h3 class="text-2xl font-black mb-2">Request your walkthrough</h3>
+            <p class="text-slateText mb-6">Fill this out and we’ll reach out with next steps.</p>
+
+            <form action="#" method="post" class="space-y-4">
+              <div>
+                <label class="block text-sm font-semibold mb-1" for="name">Full name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                  placeholder="John Smith"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold mb-1" for="company">Business name</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                  placeholder="Smith Roofing"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-semibold mb-1" for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold mb-1" for="city">City</label>
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                    placeholder="Indianapolis"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold mb-1" for="tier">What are you interested in?</label>
+                <select
+                  id="tier"
+                  name="tier"
+                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                >
+                  <option>Website + System (Professional)</option>
+                  <option>Website Only (Essentials)</option>
+                  <option>Growth (GBP + Local SEO)</option>
+                  <option>Not sure — help me choose</option>
+                </select>
+              </div>
+              <!-- SMS Consent (TCPA/CTIA-style) -->
+<div class="rounded-xl border border-[#dbe1e6] bg-background-light px-4 py-4">
+  <div class="flex items-start gap-3">
+    <input
+      id="sms_consent"
+      name="sms_consent"
+      type="checkbox"
+      required
+      value="yes"
+      class="mt-1 size-5 rounded border-[#cfd8df] text-primary focus:ring-2 focus:ring-primary/40"
+    />
+    <label for="sms_consent" class="text-sm text-slateText leading-relaxed">
+      I agree to receive text messages from <span class="font-semibold text-ink">PandaMetric</span> at the phone number provided,
+      including automated messages, for appointment scheduling, service updates, and follow-up related to my inquiry.
+      Message frequency varies. Message &amp; data rates may apply. Reply <span class="font-semibold">STOP</span> to opt out and
+      <span class="font-semibold">HELP</span> for help.
+      Consent is not a condition of purchase.
+      <span class="block mt-2">
+        <a href="terms.and.conditions.html" class="font-semibold text-primary hover:underline">Terms</a>
+        &nbsp;and&nbsp;
+        <a href="privacy.policy.html" class="font-semibold text-primary hover:underline">Privacy Policy</a>.
+      </span>
+    </label>
+  </div>
+</div>
+
+<!-- Hidden fields (helpful for compliance + tracking) -->
+<input type="hidden" name="page_url" value="" id="page_url" />
+<input type="hidden" name="submitted_at" value="" id="submitted_at" />
+
+
+              <button
+                type="submit"
+                class="w-full bg-primary text-white text-lg font-bold px-6 py-4 rounded-lg hover:brightness-110 transition-all"
+              >
+                Submit Inquiry
+              </button>
+
+              <p class="text-xs text-slateText">
+                By submitting, you agree to be contacted by PandaMetric. Message/data rates may apply.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-[#f0f2f5] dark:border-white/5 bg-white dark:bg-background-dark">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+  <img
+    src="/assets/pandametric.logo.png"
+    alt="PandaMetric logo"
+    class="h-14 w-auto"
+  />
+</div>
+
+
+        <div class="text-sm text-slateText dark:text-white/40">
+          © 2026 PandaMetric. Built for contractors.
+        </div>
+
+        <div class="flex gap-6 text-sm">
+          <a class="text-slateText hover:text-primary transition-colors focus-ring rounded-md" href="privacy.policy.html">Privacy</a>
+          <a class="text-slateText hover:text-primary transition-colors focus-ring rounded-md" href="terms.and.conditions.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style>
+  .mobile-sticky-cta {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-sticky-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      z-index: 60;
+
+      height: 56px;
+      background: #188bf7;
+      color: white;
+      font-weight: 800;
+      font-size: 16px;
+      border-radius: 14px;
+      text-decoration: none;
+
+      box-shadow: 0 12px 30px rgba(24, 139, 247, 0.45);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .mobile-sticky-cta:active {
+      transform: scale(0.98);
+      box-shadow: 0 8px 20px rgba(24, 139, 247, 0.35);
+    }
+  }
+</style>
+
+    <!-- Mobile Sticky CTA -->
+<a
+  href="#contact"
+  class="mobile-sticky-cta focus-ring"
+>
+  Get Free Walkthrough
+</a>
+
+<script>
+  // Fill compliance-friendly metadata fields (optional but recommended)
+  (function () {
+    const urlEl = document.getElementById("page_url");
+    const timeEl = document.getElementById("submitted_at");
+    if (urlEl) urlEl.value = window.location.href;
+    if (timeEl) timeEl.value = new Date().toISOString();
+  })();
+</script>
+
+  </body>
+</html>
+
+
