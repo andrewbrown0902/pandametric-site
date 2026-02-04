@@ -1027,115 +1027,120 @@
             </p>
           </div>
 
-          <!-- Simple form (replace with your GHL embed when ready) -->
+          <!-- Simple form  -->
           <div class="bg-white rounded-2xl p-8 text-ink border border-white/10">
             <h3 class="text-2xl font-black mb-2">Request your walkthrough</h3>
             <p class="text-slateText mb-6">Fill this out and we’ll reach out with next steps.</p>
 
-            <form action="#" method="post" class="space-y-4">
-              <div>
-                <label class="block text-sm font-semibold mb-1" for="name">Full name</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                  placeholder="John Smith"
-                />
-              </div>
-
-              <div>
-                <label class="block text-sm font-semibold mb-1" for="company">Business name</label>
-                <input
-                  id="company"
-                  name="company"
-                  type="text"
-                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                  placeholder="Smith Roofing"
-                />
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-sm font-semibold mb-1" for="phone">Phone</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    required
-                    class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                    placeholder="(555) 555-5555"
-                  />
-                </div>
-
-                <div>
-                  <label class="block text-sm font-semibold mb-1" for="city">City</label>
-                  <input
-                    id="city"
-                    name="city"
-                    type="text"
-                    class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                    placeholder="Indianapolis"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-sm font-semibold mb-1" for="tier">What are you interested in?</label>
-                <select
-                  id="tier"
-                  name="tier"
-                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                >
-                  <option>Website + System (Professional)</option>
-                  <option>Website Only (Essentials)</option>
-                  <option>Growth (GBP + Local SEO)</option>
-                  <option>Not sure — help me choose</option>
-                </select>
-              </div>
-              <!-- SMS Consent (TCPA/CTIA-style) -->
-<div class="rounded-xl border border-[#dbe1e6] bg-background-light px-4 py-4">
-  <div class="flex items-start gap-3">
+            <form id="ghlLeadForm" class="space-y-4" novalidate>
+  <div>
+    <label class="block text-sm font-semibold mb-1" for="name">Full name</label>
     <input
-      id="sms_consent"
-      name="sms_consent"
-      type="checkbox"
+      id="name"
+      name="name"
+      type="text"
       required
-      value="yes"
-      class="mt-1 size-5 rounded border-[#cfd8df] text-primary focus:ring-2 focus:ring-primary/40"
+      autocomplete="name"
+      class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+      placeholder="John Smith"
     />
-    <label for="sms_consent" class="text-sm text-slateText leading-relaxed">
-      I agree to receive text messages from <span class="font-semibold text-ink">PandaMetric</span> at the phone number provided,
-      including automated messages, for appointment scheduling, service updates, and follow-up related to my inquiry.
-      Message frequency varies. Message &amp; data rates may apply. Reply <span class="font-semibold">STOP</span> to opt out and
-      <span class="font-semibold">HELP</span> for help.
-      Consent is not a condition of purchase.
-      <span class="block mt-2">
-        <a href="terms.and.conditions.html" class="font-semibold text-primary hover:underline">Terms</a>
-        &nbsp;and&nbsp;
-        <a href="privacy.policy.html" class="font-semibold text-primary hover:underline">Privacy Policy</a>.
-      </span>
-    </label>
   </div>
-</div>
 
-<!-- Hidden fields (helpful for compliance + tracking) -->
-<input type="hidden" name="page_url" value="" id="page_url" />
-<input type="hidden" name="submitted_at" value="" id="submitted_at" />
+  <div>
+    <label class="block text-sm font-semibold mb-1" for="company">Business name</label>
+    <input
+      id="company"
+      name="company"
+      type="text"
+      autocomplete="organization"
+      class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+      placeholder="Smith Roofing"
+    />
+  </div>
 
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <label class="block text-sm font-semibold mb-1" for="phone">Phone</label>
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        required
+        autocomplete="tel"
+        class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+        placeholder="(555) 555-5555"
+      />
+    </div>
 
-              <button
-                type="submit"
-                class="w-full bg-primary text-white text-lg font-bold px-6 py-4 rounded-lg hover:brightness-110 transition-all"
-              >
-                Submit Inquiry
-              </button>
+    <div>
+      <label class="block text-sm font-semibold mb-1" for="city">City</label>
+      <input
+        id="city"
+        name="city"
+        type="text"
+        autocomplete="address-level2"
+        class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+        placeholder="Indianapolis"
+      />
+    </div>
+  </div>
 
-              <p class="text-xs text-slateText">
-                By submitting, you agree to be contacted by PandaMetric. Message/data rates may apply.
-              </p>
-            </form>
+  <div>
+    <label class="block text-sm font-semibold mb-1" for="tier">What are you interested in?</label>
+    <select
+      id="tier"
+      name="tier"
+      class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+    >
+      <option>Website + System (Professional)</option>
+      <option>Website Only (Essentials)</option>
+      <option>Growth (GBP + Local SEO)</option>
+      <option>Not sure — help me choose</option>
+    </select>
+  </div>
+
+  <!-- SMS Consent (TCPA/CTIA-style) -->
+  <div class="rounded-xl border border-[#dbe1e6] bg-background-light px-4 py-4">
+    <div class="flex items-start gap-3">
+      <input
+        id="sms_consent"
+        name="sms_consent"
+        type="checkbox"
+        required
+        value="yes"
+        class="mt-1 size-5 rounded border-[#cfd8df] text-primary focus:ring-2 focus:ring-primary/40"
+      />
+      <label for="sms_consent" class="text-sm text-slateText leading-relaxed">
+        I agree to receive text messages from <span class="font-semibold text-ink">PandaMetric</span> at the phone number provided,
+        including automated messages, for appointment scheduling, service updates, and follow-up related to my inquiry.
+        Message frequency varies. Message &amp; data rates may apply. Reply <span class="font-semibold">STOP</span> to opt out and
+        <span class="font-semibold">HELP</span> for help.
+        Consent is not a condition of purchase.
+        <span class="block mt-2">
+          <a href="terms.and.conditions.html" class="font-semibold text-primary hover:underline">Terms</a>
+          &nbsp;and&nbsp;
+          <a href="privacy.policy.html" class="font-semibold text-primary hover:underline">Privacy Policy</a>.
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Hidden fields (compliance + tracking) -->
+  <input type="hidden" name="page_url" value="" id="page_url" />
+  <input type="hidden" name="submitted_at" value="" id="submitted_at" />
+
+  <!-- Optional: lightweight status line -->
+  <p id="formStatus" class="text-sm text-slateText" aria-live="polite"></p>
+
+  <button
+    id="submitBtn"
+    type="submit"
+    class="w-full bg-primary text-white text-lg font-bold px-6 py-4 rounded-lg hover:brightness-110 transition-all"
+  >
+    Submit Inquiry
+  </button>
+</form>
+
           </div>
         </div>
       </div>
@@ -1223,6 +1228,103 @@
   })();
 </script>
 
+<script>
+(function () {
+  const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/AMZ3rfS77ZVkRms0fUd2/webhook-trigger/wieRxpG0toxBd2RNqDGV";
+
+  const form = document.getElementById("ghlLeadForm");
+  if (!form) return;
+
+  const pageUrlEl = document.getElementById("page_url");
+  const submittedAtEl = document.getElementById("submitted_at");
+  const statusEl = document.getElementById("formStatus");
+  const submitBtn = document.getElementById("submitBtn");
+
+  // Set page URL immediately
+  if (pageUrlEl) pageUrlEl.value = window.location.href;
+
+  function setStatus(msg) {
+    if (statusEl) statusEl.textContent = msg || "";
+  }
+
+  function normalizePhone(phone) {
+    // Keep digits + leading plus. (Basic normalization; GHL can handle many formats.)
+    return (phone || "").trim();
+  }
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    setStatus("");
+
+    // Browser validation (required fields, etc.)
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // Timestamp right at submit
+    const nowIso = new Date().toISOString();
+    if (submittedAtEl) submittedAtEl.value = nowIso;
+
+    // Split name into first/last (best-effort)
+    const fullName = (form.name?.value || "").trim();
+    const nameParts = fullName.split(/\s+/).filter(Boolean);
+    const first_name = nameParts.slice(0, 1).join(" ");
+    const last_name = nameParts.slice(1).join(" ");
+
+    // Build payload
+    const payload = {
+      // Common GHL-friendly fields
+      full_name: fullName,
+      first_name,
+      last_name,
+      phone: normalizePhone(form.phone?.value),
+      company: (form.company?.value || "").trim(),
+      city: (form.city?.value || "").trim(),
+      interest: (form.tier?.value || "").trim(),
+
+      // Consent + tracking
+      sms_consent: form.sms_consent?.checked ? "yes" : "no",
+      page_url: pageUrlEl ? pageUrlEl.value : window.location.href,
+      submitted_at: nowIso,
+
+      // Optional extra context
+      source: "website",
+      form_name: "Walkthrough Request"
+    };
+
+    // UI state
+    submitBtn.disabled = true;
+    submitBtn.setAttribute("aria-disabled", "true");
+    setStatus("Submitting...");
+
+    try {
+      const res = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      // Some webhook endpoints return 200/201/204; treat any 2xx as success
+      if (!res.ok) throw new Error("Non-2xx response: " + res.status);
+
+      setStatus("Success! We’ll reach out shortly.");
+      form.reset();
+
+      // Re-set page URL after reset
+      if (pageUrlEl) pageUrlEl.value = window.location.href;
+    } catch (err) {
+      console.error("GHL webhook error:", err);
+      setStatus("Something went wrong. Please call/text us or try again.");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.removeAttribute("aria-disabled");
+    }
+  });
+})();
+</script>
+
+    
   </body>
 </html>
 
