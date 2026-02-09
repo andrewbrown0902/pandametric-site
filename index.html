@@ -91,13 +91,8 @@
     >
       <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
         <a href="#top" class="flex items-center gap-3 focus-ring rounded-lg">
-  <img
-    src="/assets/pandametric.logo.png"
-    alt="PandaMetric logo"
-    class="h-16 w-auto"
-  />
-</a>
-
+          <img src="/assets/pandametric.logo.png" alt="PandaMetric logo" class="h-16 w-auto" />
+        </a>
 
         <div class="hidden md:flex items-center gap-8">
           <nav class="flex items-center gap-6">
@@ -113,9 +108,7 @@
             <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#process"
               >Process</a
             >
-            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#faq"
-              >FAQ</a
-            >
+            <a class="text-sm font-semibold hover:text-primary transition-colors focus-ring rounded-md" href="#faq">FAQ</a>
           </nav>
 
           <a
@@ -129,15 +122,16 @@
     </header>
 
     <!-- ===================================================== -->
-    <!-- SECTION 1: Hero (KEEP EXACTLY THE SAME AS CURRENT)     -->
+    <!-- SECTION 1: Hero (CENTER-ALIGNED)                       -->
     <!-- ===================================================== -->
     <section id="top" class="bg-background-dark text-white tech-pattern relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
 
       <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-24 pb-28 relative z-10">
-        <div class="max-w-[880px] flex flex-col gap-8">
+        <!-- Centered hero stack -->
+        <div class="max-w-[880px] mx-auto flex flex-col items-center text-center gap-8">
           <div
-            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest"
+            class="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest"
           >
             <span class="material-symbols-outlined text-[14px]">bolt</span>
             Built for contractors & home services
@@ -148,39 +142,41 @@
             <span class="text-primary underline decoration-white/15">It should book jobs.</span>
           </h1>
 
-          <p class="text-lg md:text-xl text-white/70 max-w-[680px] leading-relaxed">
+          <p class="text-lg md:text-xl text-white/70 max-w-[680px] leading-relaxed mx-auto">
             PandaMetric builds fast, conversion-focused contractor websites — plus a backend system that texts missed callers,
             follows up with leads, and helps you collect more 5-star reviews automatically.
           </p>
 
-          <div class="flex flex-col sm:flex-row items-center gap-4 mt-2">
-            <a
-              href="#contact"
-              class="w-full sm:w-auto bg-primary text-white text-lg font-bold px-8 py-4 rounded-lg hover:scale-[1.02] transition-transform focus-ring text-center"
-            >
-              Get a Free Walkthrough of the Site &amp; System
-            </a>
-            <div class="text-sm font-medium text-white/50 text-center sm:text-left">
-              No pressure. We’ll show you what the system would look like for <span class="text-white/80">your</span> business.
-            </div>
-          </div>
+          <div class="mt-2 w-full flex flex-col items-center justify-center gap-3">
+  <a
+    href="#contact"
+    class="w-full sm:w-auto bg-primary text-white text-lg font-bold px-8 py-4 rounded-lg hover:scale-[1.02] transition-transform focus-ring text-center"
+  >
+    Get a Free Walkthrough of the Site &amp; System
+  </a>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 border-t border-white/10 pt-10">
-            <div class="flex items-start gap-3">
+  <div class="text-sm font-medium text-white/50 text-center max-w-[520px]">
+    No pressure. We’ll show you what the system would look like for <span class="text-white/80">your</span> business.
+  </div>
+</div>
+
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 border-t border-white/10 pt-10 w-full">
+            <div class="flex flex-col items-center text-center gap-3">
               <span class="material-symbols-outlined text-primary">check_circle</span>
               <div>
                 <p class="font-bold">Instant Lead Response</p>
                 <p class="text-sm text-white/50">Missed-call text back + fast follow-up.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
+            <div class="flex flex-col items-center text-center gap-3">
               <span class="material-symbols-outlined text-primary">check_circle</span>
               <div>
                 <p class="font-bold">Built to Convert</p>
                 <p class="text-sm text-white/50">Clear CTAs, trust blocks, and flow.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
+            <div class="flex flex-col items-center text-center gap-3">
               <span class="material-symbols-outlined text-primary">check_circle</span>
               <div>
                 <p class="font-bold">Done-for-You Setup</p>
@@ -721,11 +717,11 @@
                   <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
                   <span>Works perfectly on mobile (where most customers find you)</span>
                 </li>
-                                <li class="flex items-start gap-3">
+                <li class="flex items-start gap-3">
                   <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
                   <span>Optimized for Google so customers can find you</span>
                 </li>
-                                <li class="flex items-start gap-3">
+                <li class="flex items-start gap-3">
                   <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
                   <span>We handle updates, fixes, and changes for you</span>
                 </li>
@@ -734,7 +730,9 @@
           </div>
 
           <!-- Tier 2 -->
-          <div class="bg-primary text-white p-8 rounded-2xl border-4 border-primary relative shadow-2xl flex flex-col lg:scale-[1.04] z-10">
+          <div
+            class="bg-primary text-white p-8 rounded-2xl border-4 border-primary relative shadow-2xl flex flex-col lg:scale-[1.04] z-10"
+          >
             <div
               class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-ink text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full"
             >
@@ -777,6 +775,7 @@
                 <li class="flex items-start gap-3">
                   <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
                   <span>Automatic review requests after jobs</span>
+                </li>
                 <li class="flex items-start gap-3">
                   <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
                   <span>Re-activate past customers for repeat jobs & referrals</span>
@@ -784,6 +783,7 @@
                 <li class="flex items-start gap-3">
                   <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
                   <span>All texts, calls, and emails in one place</span>
+                </li>
                 <li class="flex items-start gap-3">
                   <span class="material-symbols-outlined text-white mt-0.5">check_circle</span>
                   <span>Manage leads from your phone</span>
@@ -860,7 +860,9 @@
           <div class="hidden md:block absolute top-10 left-[20%] right-[20%] h-0.5 bg-[#dbe1e6] dark:bg-white/10 z-0"></div>
 
           <div class="relative z-10 text-center space-y-4">
-            <div class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark">
+            <div
+              class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark"
+            >
               1
             </div>
             <h5 class="text-xl font-bold pt-2">Walkthrough</h5>
@@ -870,7 +872,9 @@
           </div>
 
           <div class="relative z-10 text-center space-y-4">
-            <div class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark">
+            <div
+              class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark"
+            >
               2
             </div>
             <h5 class="text-xl font-bold pt-2">Build &amp; setup</h5>
@@ -880,7 +884,9 @@
           </div>
 
           <div class="relative z-10 text-center space-y-4">
-            <div class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark">
+            <div
+              class="size-20 rounded-full bg-primary text-white text-2xl font-black flex items-center justify-center mx-auto ring-8 ring-white dark:ring-background-dark"
+            >
               3
             </div>
             <h5 class="text-xl font-bold pt-2">Launch</h5>
@@ -893,74 +899,64 @@
     </section>
 
     <!-- SECTION: Founder / Accountability -->
-<section class="py-24 bg-background-light dark:bg-background-dark/40">
-  <div class="max-w-[900px] mx-auto px-6 lg:px-10">
-    <div
-      class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-10 items-center bg-white dark:bg-white/5 border border-[#dbe1e6] dark:border-white/10 rounded-2xl p-10"
-    >
-      <!-- Founder Image -->
-      <div class="flex justify-center md:justify-start">
-        <div class="relative">
-          <img
-            src="/assets/"
-            alt="Andrew Brown, Founder of PandaMetric"
-            class="size-44 rounded-2xl object-cover border border-[#dbe1e6] dark:border-white/10"
-          />
-          <!-- Optional subtle accent -->
-          <div
-            class="absolute -bottom-3 -right-3 size-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg"
-          >
-            <span class="material-symbols-outlined">verified</span>
+    <section class="py-24 bg-background-light dark:bg-background-dark/40">
+      <div class="max-w-[900px] mx-auto px-6 lg:px-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-10 items-center bg-white dark:bg-white/5 border border-[#dbe1e6] dark:border-white/10 rounded-2xl p-10"
+        >
+          <!-- Founder Image -->
+          <div class="flex justify-center md:justify-start">
+            <div class="relative">
+              <img
+                src="/assets/"
+                alt="Andrew Brown, Founder of PandaMetric"
+                class="size-44 rounded-2xl object-cover border border-[#dbe1e6] dark:border-white/10"
+              />
+              <!-- Optional subtle accent -->
+              <div
+                class="absolute -bottom-3 -right-3 size-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg"
+              >
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copy -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black tracking-tight mb-4">Who you’re working with</h2>
+
+            <p class="font-bold mb-3">Andrew Brown — Founder, PandaMetric</p>
+
+            <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
+              I work directly with local contractors who want more jobs — without dealing with tech headaches.
+            </p>
+
+            <p class="text-slateText dark:text-white/70 leading-relaxed mb-4">No call centers. No overseas support. No runaround.</p>
+
+            <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
+              When you work with me, you’re working with the same person that:
+            </p>
+
+            <ul class="space-y-2 mb-4 text-slateText dark:text-white/70">
+              <li>✅ Builds your website</li>
+              <li>✅ Sets up your lead system</li>
+              <li>✅ Helps you get more calls</li>
+              <li>✅ Fixes things when needed</li>
+            </ul>
+
+            <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
+              I’ve spent 4+ years helping home service businesses grow using digital marketing that actually works.
+            </p>
+
+            <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">If something needs changed, you call or text me directly.</p>
+
+            <p class="font-semibold text-slate-900 dark:text-white">
+              My job: help your online presence bring in more jobs every month, and put money directly into your pocket.
+            </p>
           </div>
         </div>
       </div>
-
-<!-- Copy -->
-<div>
-  <h2 class="text-2xl md:text-3xl font-black tracking-tight mb-4">
-    Who you’re working with
-  </h2>
-
-  <p class="font-bold mb-3">
-    Andrew Brown — Founder, PandaMetric
-  </p>
-
-  <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
-    I work directly with local contractors who want more jobs — without dealing with tech headaches.
-  </p>
-
-  <p class="text-slateText dark:text-white/70 leading-relaxed mb-4">
-    No call centers. No overseas support. No runaround.
-  </p>
-
-  <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
-    When you work with me, you’re working with the same person that:
-  </p>
-
-  <ul class="space-y-2 mb-4 text-slateText dark:text-white/70">
-    <li>✅ Builds your website</li>
-    <li>✅ Sets up your lead system</li>
-    <li>✅ Helps you get more calls</li>
-    <li>✅ Fixes things when needed</li>
-  </ul>
-
-  <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
-    I’ve spent 4+ years helping home service businesses grow using digital marketing that actually works.
-  </p>
-
-  <p class="text-slateText dark:text-white/70 leading-relaxed mb-3">
-    If something needs changed, you call or text me directly.
-  </p>
-
-  <p class="font-semibold text-slate-900 dark:text-white">
-    My job: help your online presence bring in more jobs every month, and put money directly into your pocket.
-  </p>
-</div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- ===================================================== -->
     <!-- SECTION 10: FAQ (REVISED: website-first)               -->
@@ -1045,9 +1041,7 @@
               </li>
             </ul>
 
-            <p class="mt-6 text-sm text-white/55">
-              We keep onboarding efficient so builds stay fast and quality stays high.
-            </p>
+            <p class="mt-6 text-sm text-white/55">We keep onboarding efficient so builds stay fast and quality stays high.</p>
           </div>
 
           <!-- Simple form  -->
@@ -1056,114 +1050,113 @@
             <p class="text-slateText mb-6">Fill this out and we’ll reach out with next steps.</p>
 
             <form id="ghlLeadForm" class="space-y-4" novalidate>
-  <div>
-    <label class="block text-sm font-semibold mb-1" for="name">Full name</label>
-    <input
-      id="name"
-      name="name"
-      type="text"
-      required
-      autocomplete="name"
-      class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-      placeholder="John Smith"
-    />
-  </div>
+              <div>
+                <label class="block text-sm font-semibold mb-1" for="name">Full name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                  placeholder="John Smith"
+                />
+              </div>
 
-  <div>
-    <label class="block text-sm font-semibold mb-1" for="company">Business name</label>
-    <input
-      id="company"
-      name="company"
-      type="text"
-      autocomplete="organization"
-      class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-      placeholder="Smith Roofing"
-    />
-  </div>
+              <div>
+                <label class="block text-sm font-semibold mb-1" for="company">Business name</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                  placeholder="Smith Roofing"
+                />
+              </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <div>
-      <label class="block text-sm font-semibold mb-1" for="phone">Phone</label>
-      <input
-        id="phone"
-        name="phone"
-        type="tel"
-        required
-        autocomplete="tel"
-        class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-        placeholder="(555) 555-5555"
-      />
-    </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-semibold mb-1" for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    autocomplete="tel"
+                    class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
 
-    <div>
-      <label class="block text-sm font-semibold mb-1" for="city">City</label>
-      <input
-        id="city"
-        name="city"
-        type="text"
-        autocomplete="address-level2"
-        class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-        placeholder="Indianapolis"
-      />
-    </div>
-  </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-1" for="city">City</label>
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    autocomplete="address-level2"
+                    class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                    placeholder="Indianapolis"
+                  />
+                </div>
+              </div>
 
-  <div>
-    <label class="block text-sm font-semibold mb-1" for="tier">What are you interested in?</label>
-    <select
-      id="tier"
-      name="tier"
-      class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
-    >
-      <option>Website + System (Professional)</option>
-      <option>Website Only (Essentials)</option>
-      <option>Growth (GBP + Local SEO)</option>
-      <option>Not sure — help me choose</option>
-    </select>
-  </div>
+              <div>
+                <label class="block text-sm font-semibold mb-1" for="tier">What are you interested in?</label>
+                <select
+                  id="tier"
+                  name="tier"
+                  class="w-full rounded-lg border border-[#dbe1e6] px-4 py-3 focus:ring-2 focus:ring-primary/40 focus:border-primary"
+                >
+                  <option>Website + System (Professional)</option>
+                  <option>Website Only (Essentials)</option>
+                  <option>Growth (GBP + Local SEO)</option>
+                  <option>Not sure — help me choose</option>
+                </select>
+              </div>
 
-  <!-- SMS Consent (TCPA/CTIA-style) -->
-  <div class="rounded-xl border border-[#dbe1e6] bg-background-light px-4 py-4">
-    <div class="flex items-start gap-3">
-      <input
-        id="sms_consent"
-        name="sms_consent"
-        type="checkbox"
-        required
-        value="yes"
-        class="mt-1 size-5 rounded border-[#cfd8df] text-primary focus:ring-2 focus:ring-primary/40"
-      />
-      <label for="sms_consent" class="text-sm text-slateText leading-relaxed">
-        I agree to receive text messages from <span class="font-semibold text-ink">PandaMetric</span> at the phone number provided,
-        including automated messages, for appointment scheduling, service updates, and follow-up related to my inquiry.
-        Message frequency varies. Message &amp; data rates may apply. Reply <span class="font-semibold">STOP</span> to opt out and
-        <span class="font-semibold">HELP</span> for help.
-        Consent is not a condition of purchase.
-        <span class="block mt-2">
-          <a href="terms.and.conditions.html" class="font-semibold text-primary hover:underline">Terms</a>
-          &nbsp;and&nbsp;
-          <a href="privacy.policy.html" class="font-semibold text-primary hover:underline">Privacy Policy</a>.
-        </span>
-      </label>
-    </div>
-  </div>
+              <!-- SMS Consent (TCPA/CTIA-style) -->
+              <div class="rounded-xl border border-[#dbe1e6] bg-background-light px-4 py-4">
+                <div class="flex items-start gap-3">
+                  <input
+                    id="sms_consent"
+                    name="sms_consent"
+                    type="checkbox"
+                    required
+                    value="yes"
+                    class="mt-1 size-5 rounded border-[#cfd8df] text-primary focus:ring-2 focus:ring-primary/40"
+                  />
+                  <label for="sms_consent" class="text-sm text-slateText leading-relaxed">
+                    I agree to receive text messages from <span class="font-semibold text-ink">PandaMetric</span> at the phone number provided,
+                    including automated messages, for appointment scheduling, service updates, and follow-up related to my inquiry.
+                    Message frequency varies. Message &amp; data rates may apply. Reply <span class="font-semibold">STOP</span> to opt out and
+                    <span class="font-semibold">HELP</span> for help.
+                    Consent is not a condition of purchase.
+                    <span class="block mt-2">
+                      <a href="terms.and.conditions.html" class="font-semibold text-primary hover:underline">Terms</a>
+                      &nbsp;and&nbsp;
+                      <a href="privacy.policy.html" class="font-semibold text-primary hover:underline">Privacy Policy</a>.
+                    </span>
+                  </label>
+                </div>
+              </div>
 
-  <!-- Hidden fields (compliance + tracking) -->
-  <input type="hidden" name="page_url" value="" id="page_url" />
-  <input type="hidden" name="submitted_at" value="" id="submitted_at" />
+              <!-- Hidden fields (compliance + tracking) -->
+              <input type="hidden" name="page_url" value="" id="page_url" />
+              <input type="hidden" name="submitted_at" value="" id="submitted_at" />
 
-  <!-- Optional: lightweight status line -->
-  <p id="formStatus" class="text-sm text-slateText" aria-live="polite"></p>
+              <!-- Optional: lightweight status line -->
+              <p id="formStatus" class="text-sm text-slateText" aria-live="polite"></p>
 
-  <button
-    id="submitBtn"
-    type="submit"
-    class="w-full bg-primary text-white text-lg font-bold px-6 py-4 rounded-lg hover:brightness-110 transition-all"
-  >
-    Submit Inquiry
-  </button>
-</form>
-
+              <button
+                id="submitBtn"
+                type="submit"
+                class="w-full bg-primary text-white text-lg font-bold px-6 py-4 rounded-lg hover:brightness-110 transition-all"
+              >
+                Submit Inquiry
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -1172,18 +1165,11 @@
     <!-- Footer -->
     <footer class="py-12 border-t border-[#f0f2f5] dark:border-white/5 bg-white dark:bg-background-dark">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex items-center gap-3">
-  <img
-    src="/assets/pandametric.logo.png"
-    alt="PandaMetric logo"
-    class="h-14 w-auto"
-  />
-</div>
-
-
-        <div class="text-sm text-slateText dark:text-white/40">
-          © 2026 PandaMetric. Built for contractors.
+        <div class="flex items-center gap-3">
+          <img src="/assets/pandametric.logo.png" alt="PandaMetric logo" class="h-14 w-auto" />
         </div>
+
+        <div class="text-sm text-slateText dark:text-white/40">© 2026 PandaMetric. Built for contractors.</div>
 
         <div class="flex gap-6 text-sm">
           <a class="text-slateText hover:text-primary transition-colors focus-ring rounded-md" href="privacy.policy.html">Privacy</a>
@@ -1198,173 +1184,164 @@
       }
     </style>
     <style>
-  .mobile-sticky-cta {
-    display: none;
-  }
+      .mobile-sticky-cta {
+        display: none;
+      }
 
-  @media (max-width: 768px) {
-    .mobile-sticky-cta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @media (max-width: 768px) {
+        .mobile-sticky-cta {
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-      position: fixed;
-      bottom: 16px;
-      left: 16px;
-      right: 16px;
-      z-index: 60;
+          position: fixed;
+          bottom: 16px;
+          left: 16px;
+          right: 16px;
+          z-index: 60;
 
-      height: 56px;
-      background: #188bf7;
-      color: white;
-      font-weight: 800;
-      font-size: 16px;
-      border-radius: 14px;
-      text-decoration: none;
+          height: 56px;
+          background: #188bf7;
+          color: white;
+          font-weight: 800;
+          font-size: 16px;
+          border-radius: 14px;
+          text-decoration: none;
 
-      box-shadow: 0 12px 30px rgba(24, 139, 247, 0.45);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
+          box-shadow: 0 12px 30px rgba(24, 139, 247, 0.45);
+          transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
 
-    .mobile-sticky-cta:active {
-      transform: scale(0.98);
-      box-shadow: 0 8px 20px rgba(24, 139, 247, 0.35);
-    }
-  }
-</style>
+        .mobile-sticky-cta:active {
+          transform: scale(0.98);
+          box-shadow: 0 8px 20px rgba(24, 139, 247, 0.35);
+        }
+      }
+    </style>
 
     <!-- Mobile Sticky CTA -->
-<a
-  href="#contact"
-  class="mobile-sticky-cta focus-ring"
->
-  Get Free Walkthrough
-</a>
+    <a href="#contact" class="mobile-sticky-cta focus-ring"> Get Free Walkthrough </a>
 
-<script>
-  // Fill compliance-friendly metadata fields (optional but recommended)
-  (function () {
-    const urlEl = document.getElementById("page_url");
-    const timeEl = document.getElementById("submitted_at");
-    if (urlEl) urlEl.value = window.location.href;
-    if (timeEl) timeEl.value = new Date().toISOString();
-  })();
-</script>
+    <script>
+      // Fill compliance-friendly metadata fields (optional but recommended)
+      (function () {
+        const urlEl = document.getElementById("page_url");
+        const timeEl = document.getElementById("submitted_at");
+        if (urlEl) urlEl.value = window.location.href;
+        if (timeEl) timeEl.value = new Date().toISOString();
+      })();
+    </script>
 
-<script>
-(function () {
-  const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/AMZ3rfS77ZVkRms0fUd2/webhook-trigger/wieRxpG0toxBd2RNqDGV";
+    <script>
+      (function () {
+        const WEBHOOK_URL =
+          "https://services.leadconnectorhq.com/hooks/AMZ3rfS77ZVkRms0fUd2/webhook-trigger/wieRxpG0toxBd2RNqDGV";
 
-  const form = document.getElementById("ghlLeadForm");
-  if (!form) return;
+        const form = document.getElementById("ghlLeadForm");
+        if (!form) return;
 
-  const pageUrlEl = document.getElementById("page_url");
-  const submittedAtEl = document.getElementById("submitted_at");
-  const statusEl = document.getElementById("formStatus");
-  const submitBtn = document.getElementById("submitBtn");
+        const pageUrlEl = document.getElementById("page_url");
+        const submittedAtEl = document.getElementById("submitted_at");
+        const statusEl = document.getElementById("formStatus");
+        const submitBtn = document.getElementById("submitBtn");
 
-  // Set page URL immediately
-  if (pageUrlEl) pageUrlEl.value = window.location.href;
+        // Set page URL immediately
+        if (pageUrlEl) pageUrlEl.value = window.location.href;
 
-  function setStatus(msg) {
-    if (statusEl) statusEl.textContent = msg || "";
-  }
+        function setStatus(msg) {
+          if (statusEl) statusEl.textContent = msg || "";
+        }
 
-function normalizePhone(phone) {
-  if (!phone) return "";
+        function normalizePhone(phone) {
+          if (!phone) return "";
 
-  const digits = phone.replace(/\D/g, "");
+          const digits = phone.replace(/\D/g, "");
 
-  if (digits.length === 10) {
-    return "+1" + digits;
-  }
+          if (digits.length === 10) {
+            return "+1" + digits;
+          }
 
-  if (digits.length === 11 && digits.startsWith("1")) {
-    return "+" + digits;
-  }
+          if (digits.length === 11 && digits.startsWith("1")) {
+            return "+" + digits;
+          }
 
-  if (phone.startsWith("+")) {
-    return phone;
-  }
+          if (phone.startsWith("+")) {
+            return phone;
+          }
 
-  return phone;
-}
+          return phone;
+        }
 
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          setStatus("");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-    setStatus("");
+          // Browser validation (required fields, etc.)
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
 
-    // Browser validation (required fields, etc.)
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
+          // Timestamp right at submit
+          const nowIso = new Date().toISOString();
+          if (submittedAtEl) submittedAtEl.value = nowIso;
 
-    // Timestamp right at submit
-    const nowIso = new Date().toISOString();
-    if (submittedAtEl) submittedAtEl.value = nowIso;
+          // Split name into first/last (best-effort)
+          const fullName = (form.name?.value || "").trim();
+          const nameParts = fullName.split(/\s+/).filter(Boolean);
+          const first_name = nameParts.slice(0, 1).join(" ");
+          const last_name = nameParts.slice(1).join(" ");
 
-    // Split name into first/last (best-effort)
-    const fullName = (form.name?.value || "").trim();
-    const nameParts = fullName.split(/\s+/).filter(Boolean);
-    const first_name = nameParts.slice(0, 1).join(" ");
-    const last_name = nameParts.slice(1).join(" ");
+          // Build payload
+          const payload = {
+            // Common GHL-friendly fields
+            full_name: fullName,
+            first_name,
+            last_name,
+            phone: normalizePhone(form.phone?.value),
+            company: (form.company?.value || "").trim(),
+            city: (form.city?.value || "").trim(),
+            interest: (form.tier?.value || "").trim(),
 
-    // Build payload
-    const payload = {
-      // Common GHL-friendly fields
-      full_name: fullName,
-      first_name,
-      last_name,
-      phone: normalizePhone(form.phone?.value),
-      company: (form.company?.value || "").trim(),
-      city: (form.city?.value || "").trim(),
-      interest: (form.tier?.value || "").trim(),
+            // Consent + tracking
+            sms_consent: form.sms_consent?.checked ? "yes" : "no",
+            page_url: pageUrlEl ? pageUrlEl.value : window.location.href,
+            submitted_at: nowIso,
 
-      // Consent + tracking
-      sms_consent: form.sms_consent?.checked ? "yes" : "no",
-      page_url: pageUrlEl ? pageUrlEl.value : window.location.href,
-      submitted_at: nowIso,
+            // Optional extra context
+            source: "website",
+            form_name: "Walkthrough Request",
+          };
 
-      // Optional extra context
-      source: "website",
-      form_name: "Walkthrough Request"
-    };
+          // UI state
+          submitBtn.disabled = true;
+          submitBtn.setAttribute("aria-disabled", "true");
+          setStatus("Submitting...");
 
-    // UI state
-    submitBtn.disabled = true;
-    submitBtn.setAttribute("aria-disabled", "true");
-    setStatus("Submitting...");
+          try {
+            const res = await fetch(WEBHOOK_URL, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
 
-    try {
-      const res = await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
+            // Some webhook endpoints return 200/201/204; treat any 2xx as success
+            if (!res.ok) throw new Error("Non-2xx response: " + res.status);
 
-      // Some webhook endpoints return 200/201/204; treat any 2xx as success
-      if (!res.ok) throw new Error("Non-2xx response: " + res.status);
+            setStatus("Success! We’ll reach out shortly.");
+            form.reset();
 
-      setStatus("Success! We’ll reach out shortly.");
-      form.reset();
-
-      // Re-set page URL after reset
-      if (pageUrlEl) pageUrlEl.value = window.location.href;
-    } catch (err) {
-      console.error("GHL webhook error:", err);
-      setStatus("Something went wrong. Please call/text us or try again.");
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.removeAttribute("aria-disabled");
-    }
-  });
-})();
-</script>
-
-    
+            // Re-set page URL after reset
+            if (pageUrlEl) pageUrlEl.value = window.location.href;
+          } catch (err) {
+            console.error("GHL webhook error:", err);
+            setStatus("Something went wrong. Please call/text us or try again.");
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.removeAttribute("aria-disabled");
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
-
-
